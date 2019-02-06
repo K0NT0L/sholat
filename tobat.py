@@ -34,8 +34,7 @@ print "\033[35;1m"
 print ("____________________________________")
 print ("[ 1. ] Untuk Lokal")
 print ("[ 2. ] Untuk Dunia")
-print
-("____________________________________\033[00m")
+print ("____________________________________\033[00m")
 time.sleep(1)
 pilih = raw_input("\033[00mRoot@localhost => ") 
 
