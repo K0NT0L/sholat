@@ -1,5 +1,5 @@
 #!/usr/bin/env python2 
-
+#-*- coding: utf-8 -*-
 """
 # mau ngapain exploit nano? 
 # heleh w nuub stah^_^
@@ -34,17 +34,29 @@ print "\033[35;1m"
 print ("____________________________________")
 print ("[ 1. ] Untuk Lokal")
 print ("[ 2. ] Untuk Dunia")
+print ("[ 0. ] Exit ")
 print ("____________________________________\033[00m")
 time.sleep(1)
-pilih = raw_input("\033[00mRoot@localhost => ") 
+bntng = input("\033[00mRoot@localhost => ") 
 
-if pilih == 1:
-            time.sleep(0.1)
-os.system("python2 lokal.py")
-os.system("exit")
+if bntng == 1:
+           os.system("clear")
+           time.sleep(0.1)
+           os.system("python2 lokal.py")
+           os.system("exit")
 
-if pilih == 2:
+if bntng == 2:
          time.sleep(0.1)
-os.system("python2 world.py")
-os.system("exit")
+         os.system("python2 world.py")
+         os.system("exit")
 
+if bntng == 0:
+        os.system('clear')
+        os.system("echo good luck | lolcat")
+        time.sleep(2)
+        os.system("exit")
+
+else:
+        print ("\033[93mwrong input")
+        time.sleep(0.5)
+        system.exit()
